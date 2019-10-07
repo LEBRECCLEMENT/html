@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <meta htpp-equiv="content-type" content="text/html; charset=UTF-8">
+       <title>Les principales balises de tableau</title>
+       <link rel="stylesheet" type="text/css" href="tableau.css">
+
+
+
+
+</head>
+
+
+<body>
+ 
+       <p> Exemple d'utilisaiton des pricipales balises de tableau</p>
+       <h2>1) Un tableau classique de 3 colonnes x 2 lignes</h2>
+
+       <table>
+           <tr> 
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+           </tr>
+
+           <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+           </tr>
+        </table>
+        
+        <hr/>
+        <h2>2) Deux exemples de l'attribut "rowspan"</h2>
+        <p>La hauteur d'une celulle est exprimée en nombre de lignes.</p>
+
+        
+        <h3>2.1) Premier exemple</h3>
+       <table> 
+        <tr> 
+    
+                <td>Item 1</td>
+                <td rowspan="2">Item 2</td>
+                <td>Item 3</td>
+        </tr>
+         <tr>
+                <td>Item 4</td>
+                <td>Item 5</td>
+           </tr>
+
+        </table> 
+                <tr> 
+            
+                        <td rowspan="1">Item 1</td>
+                        <td>Item 2</td>
+                        <td>Item 3</td>
+                </tr>
+                 <tr>
+                        <td>Item 4</td>
+                        <td>Item 5</td>
+                        <td>Item 6</td>
+                        <td>Item 7</td>
+                   </tr>
+        </table>
+
+
+
+
+</body>
+
+</html>

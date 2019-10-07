@@ -2,10 +2,10 @@
 <html>
 
 <head>
-       <meta htpp-equiv="content-type" content="text/html; charset=UTF-8">
-       <title>Les principales balises de tableau</title>
-       <link rel="stylesheet" type="text/css" href="tableau.css">
-
+	<meta htpp-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Les principales balises de tableau</title>
+	<link rel="stylesheet" type="text/css" href="tableau.css">
+	<link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet"> 
 
 
 
@@ -13,56 +13,111 @@
 
 
 <body>
- 
-       <p> Exemple d'utilisaiton des pricipales balises de tableau</p>
-       <h2>1) Un tableau classique de 3 colonnes x 2 lignes</h2>
+	<p> Exemple d'utilisaiton des pricipales balises de tableau</p>
+	<h2>1) Un tableau classique de 3 colonnes x 2 lignes</h2>
 
-       <table>
-           <tr> 
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-           </tr>
+	<table>
+		<tr>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
 
-           <tr>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-           </tr>
-        </table>
-        
-        <hr/>
-        <h2>2) Deux exemples de l'attribut "rowspan"</h2>
-        <p>La hauteur d'une celulle est exprimée en nombre de lignes.</p>
+		<tr>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
+	</table>
 
-        
-        <h3>2.1) Premier exemple</h3>
-       <table> 
-        <tr> 
-    
-                <td>Item 1</td>
-                <td rowspan="2">Item 2</td>
-                <td>Item 3</td>
-        </tr>
-         <tr>
-                <td>Item 4</td>
-                <td>Item 5</td>
-           </tr>
+	<hr />
+	<h2>2) Deux exemples de l'attribut "rowspan"</h2>
+	<p>La hauteur d'une celulle est exprimée en nombre de lignes.</p>
 
-        </table> 
-                <tr> 
-            
-                        <td rowspan="1">Item 1</td>
-                        <td>Item 2</td>
-                        <td>Item 3</td>
-                </tr>
-                 <tr>
-                        <td>Item 4</td>
-                        <td>Item 5</td>
-                        <td>Item 6</td>
-                        <td>Item 7</td>
-                   </tr>
-        </table>
+
+	<h3>2.1) Premier exemple</h3>
+	<table>
+	    <tr>
+
+			<td>Item 1</td>
+			<td colspan="2">Item 2 et Item 3</td>
+		</tr>
+		<tr>
+			<td>Item 4</td>
+			<td>Item 5</td>
+			<td>Item 6</td>
+		</tr>
+
+	</table>
+
+	<h3>2.2) Deuxième exemple</h3>
+	<table>
+		<tr>
+			<td rowspan="2">Item 1</td>
+			<td>Item 2</td>
+			<td>Item 3</td>
+			<td>Item 7</td>
+		</tr>
+		<tr>
+			<td>Item 4</td>
+			<td>Item 5</td>
+			<td>Item 6</td>
+		</tr>
+	</table>
+    <hr />
+	<h2>3) La balise "th" pour les titres</h2>
+
+	<table>
+      <tr> 
+		  <th>Titre 1</th>
+		  <th>Titre 2</th>
+          <th>Titre 2</th>
+	  </tr> 
+	<tr> 
+		<td>A</td>
+		<td>B</td>
+		<td>C</td>
+	</tr>
+	<tr> 
+	   <td>E</td>
+		<td>F</td>
+		<td>G</td>
+	</tr>
+	</table>
+	<hr />
+	<h2>4) La combinaison "colspan" et "th" </h2>
+
+	<table>
+		<tr>
+			<th colspan="2">Titre 1</th>
+			<th colspan="2">Titre 2</th>
+	   </tr>
+	   
+	   <tr>
+	     <th>Titre 3</th>
+	     <th>Titre 4</th>
+	     <th>Titre 5</th>
+	     <th>Titre 6</th>
+	   </tr>
+	   
+	   <tr>
+		 <td>A</td>
+		 <td>B</td>
+		 <td>C</td>
+		 <td>D</td>
+	   </tr>
+	   
+	   <tr>
+		 <td>E</td>
+	     <td>F</td>
+		<td>G</td>
+		<td>H</td>
+	   </tr>
+
+		
+
+
+
 
 
 

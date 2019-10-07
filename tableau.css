@@ -3,9 +3,31 @@ th,
 td {
     border: 1px solid black;
     padding: 20px;
+    font-family: 'Turret Road', cursive;
 }
 
 table {
-    background-color: chartreuse;
+    background-color: lightseagreen;
     border-collapse: collapse;
+}
+
+th {
+   color: firebrick
+}
+
+p {
+    font-family: 'Turret Road', cursive;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: 'Turret Road', cursive;
+}
+
+h3 {
+    font-family: 'Turret Road', cursive;
+}
+ 
+body {
+    background-color: orangered
 }

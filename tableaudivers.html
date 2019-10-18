@@ -8,12 +8,11 @@
     <link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    
+    <link href="tableau.css" rel="stylesheet"> 
 </head>
  
 
 <body>
-    <a class="btn btn-primary" href="#">un lien vers une page</a>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,20 +22,17 @@
                 <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="Eploiedutemps.html">Emploi du temps <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="file:///P:/slam/emploiedutemps/Eploiedutemps.html">Emploi du temps <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="signature.html">Signature</a>
+                      <a class="nav-link" href="file:///P:/slam/signature.html">Signature</a>
+                      <li class="nav-item">
+                        <a class="nav-link" href="file:///P:/slam/tableau.html">Tableau divers</a>
+                      </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tableaudivers.html">Tableau divers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="premierepage.html">Premiere page</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
+                      <a class="nav-link" href="file:///P:/slam/indexdebut.html">Premiere page</a>
+					</li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                       <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -56,9 +52,111 @@
               <main role="main" class="container">
               
                 <div class="starter-template">
-                  <h1>Mon site </h1>
-                  <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-                </div>
+                  <h1>Tableau divers</h1>
+                  Exemple d'utilisaiton des pricipales balises de tableau</p>
+	<h2>1) Un tableau classique de 3 colonnes x 2 lignes</h2>
+
+	<table>
+		<tr>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
+
+		<tr>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
+	</table>
+
+	<hr />
+	<h2>2) Deux exemples de l'attribut "rowspan"</h2>
+	<p>La hauteur d'une celulle est exprimée en nombre de lignes.</p>
+
+
+	<h3>2.1) Premier exemple</h3>
+	<table>
+	    <tr>
+
+			<td>Item 1</td>
+			<td colspan="2">Item 2 et Item 3</td>
+		</tr>
+		<tr>
+			<td>Item 4</td>
+			<td>Item 5</td>
+			<td>Item 6</td>
+		</tr>
+
+	</table>
+
+	<h3>2.2) Deuxième exemple</h3>
+	<table>
+		<tr>
+			<td rowspan="2">Item 1</td>
+			<td>Item 2</td>
+			<td>Item 3</td>
+			<td>Item 7</td>
+		</tr>
+		<tr>
+			<td>Item 4</td>
+			<td>Item 5</td>
+			<td>Item 6</td>
+		</tr>
+	</table>
+    <hr />
+	<h2>3) La balise "th" pour les titres</h2>
+
+	<table>
+      <tr> 
+		  <th>Titre 1</th>
+		  <th>Titre 2</th>
+          <th>Titre 2</th>
+	  </tr> 
+	<tr> 
+		<td>A</td>
+		<td>B</td>
+		<td>C</td>
+	</tr>
+	<tr> 
+	   <td>E</td>
+		<td>F</td>
+		<td>G</td>
+	</tr>
+	</table>
+	<hr />
+	<h2>4) La combinaison "colspan" et "th" </h2>
+
+	<table>
+		<tr>
+			<th colspan="2">Titre 1</th>
+			<th colspan="2">Titre 2</th>
+	   </tr>
+	   
+	   <tr>
+	     <th>Titre 3</th>
+	     <th>Titre 4</th>
+	     <th>Titre 5</th>
+	     <th>Titre 6</th>
+	   </tr>
+	   
+	   <tr>
+		 <td>A</td>
+		 <td>B</td>
+		 <td>C</td>
+		 <td>D</td>
+	   </tr>
+	   
+	   <tr>
+		 <td>E</td>
+	     <td>F</td>
+		<td>G</td>
+		<td>H</td>
+	   </tr>
+
+		
+
+
               
               </main><!-- /.container -->
 

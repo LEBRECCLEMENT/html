@@ -1,0 +1,58 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 20px;
+    font-family: 'Turret Road', cursive;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+   color: firebrick
+}
+
+.slam {
+    background-color: darkseagreen;
+    font-family: 'Turret Road', cursive;
+}
+
+.ricaud {
+    background-color: rgb(10, 76, 141);
+    font-family:'Turret Road', cursive;
+}
+
+.callet {
+    background-color: rgba(172, 16, 16, 0.884);
+    
+}
+
+.hommet{
+    background-color: rgb(10, 76, 141);
+}
+
+.debroise {
+    background-color:  rgb(10, 76, 141);
+}
+
+.hebert{
+    background-color: chocolate;
+}
+
+.lecouvreur {
+    background-color: rgb(206, 180, 33);
+}
+
+.anglais {
+    background-color: rebeccapurple;
+}
+
+.libre {
+    background-color: rgba(136, 135, 135, 0.87);
+}
+
+.devoir {
+    background-color: rgba(45, 117, 45, 0.979);
+}

@@ -1,0 +1,35 @@
+.pixel {
+    font-size: 30px;
+}
+
+.em {
+    font-size: 1.1em;
+}
+
+.pourcent {
+    font-size: 110%;
+}
+
+.point {
+    font-size: 20pt;
+}
+
+.pouce {
+    font-size: 0.25in;
+}
+
+.centimetre {
+    font-size: 0.8cm;
+}
+
+.millimetre {
+    font-size: 8mm;
+}
+
+.pica {
+    font-size: 2pc;
+}
+
+.ex {
+    font-size: 2ex;
+}

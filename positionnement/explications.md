@@ -1,0 +1,7 @@
+# Types de positionnement
+
+Un élément positionné est un élément dont la propriété de position calculée est **relative, absolute, fixed ou sticky** :
+
+- Un élément positionné de façon *relative* est un élément dont la propriété de position calculée est **relative**. Dans ce cas, les propriétés top ou bottom indiquent le décalage vertical à appliquer et left ou right indiquent le décalage horizontal.
+- Un élément positionné de façon *absolue* est un élément dont la propriété de position calculée est **absolute ou fixed**. Dans ce cas, les propriétés top, bottom, right et left indiquent les distances entre les bords de l'élément et les bords du bloc englobant (c'est-à-dire l'ancêtre par rapport auquel l'élément est positionné). Si l'élément possède des marges, elles sont ajoutées aux décalages.
+- Un élément positionné en *adhérence* est un élément dont la propriété de position calculée vaut **sticky**. Un tel élément se comporte comme un élément positionné de façon relative jusqu'à ce que son bloc englobant dépasse un seuil donné (par exemple fourni par la valeur de top) au sein du conteneur puis il se comporte ensuite comme un élément fixe jusqu'à atteindre le bord opposé du bloc englobant. Le positionnement adhérent est un mélange de positionnement relatif et de positionnement fixe. L'élément en *adhérence* est considéré comme **positionné de façon relative, jusqu'à ce qu'un seuil soit franchi. À partir de ce seuil, l'élément est positionné de façon fixe**.

@@ -1,0 +1,9 @@
+li {
+    list-style-type: square;
+    font-size: 25px;
+}
+
+li li {
+    list-style-type: disc;
+    color: red;
+}

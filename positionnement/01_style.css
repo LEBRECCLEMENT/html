@@ -1,0 +1,39 @@
+.statique {
+    position: static;
+    top: 100px;
+    left: 100px;
+    width: 15%;
+    background-color: gray;
+}
+
+.absolu {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 15%;
+    background-color: blue;
+}
+
+.fixe {
+    position: fixed;
+    top: 100px;
+    right: 5px;
+    width: 15%;
+    background-color: green;
+}
+
+.relatif {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 70%;
+    background-color: red;
+}
+
+.adherence {
+    position: sticky;
+    top: 100px;
+    left: 100px;
+    width: 15%;
+    background-color: yellow;
+}
